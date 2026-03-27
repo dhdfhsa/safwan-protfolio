@@ -21,7 +21,7 @@ const projects = [
     category: 'Full Stack',
     description:
       'Full-stack shopping experience with product management, cart flow, and secure checkout interactions.',
-    image: 'public/Gemini_Generated_Image_lklnt5lklnt5lkln.png',
+    image: '/Gemini_Generated_Image_lklnt5lklnt5lkln.png',
     demoUrl: '',
     sourceUrl: '',
     tags: ['React', 'Node.js', "Express.js",'MongoDB', 'Stripe',"Tailwind",],
@@ -99,24 +99,28 @@ const Projects = () => {
                 </div>
 
                 <div className="absolute right-4 bottom-4 flex gap-2">
-                  <a
-                    href={project.demoUrl}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    aria-label={`${project.title} demo`}
-                    className="grid h-10 w-10 place-items-center rounded-xl border border-white/10 bg-black/45 text-white/80 backdrop-blur-sm transition duration-300 hover:border-primary/30 hover:text-primary"
-                  >
-                   <ExternalLink className="h-4 w-4" /> 
-                  </a>
-                  <a
-                    href={project.sourceUrl}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    aria-label={`${project.title} source code`}
-                    className="grid h-10 w-10 place-items-center rounded-xl border border-white/10 bg-black/45 text-white/80 backdrop-blur-sm transition duration-300 hover:border-primary/30 hover:text-primary"
-                  >
-                    <Braces className="h-4 w-4" />
-                  </a>
+                  {project.demoUrl ? (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label={`${project.title} demo`}
+                      className="grid h-10 w-10 place-items-center rounded-xl border border-white/10 bg-black/45 text-white/80 backdrop-blur-sm transition duration-300 hover:border-primary/30 hover:text-primary"
+                    >
+                      <ExternalLink className="h-4 w-4" />
+                    </a>
+                  ) : null}
+                  {project.sourceUrl ? (
+                    <a
+                      href={project.sourceUrl}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label={`${project.title} source code`}
+                      className="grid h-10 w-10 place-items-center rounded-xl border border-white/10 bg-black/45 text-white/80 backdrop-blur-sm transition duration-300 hover:border-primary/30 hover:text-primary"
+                    >
+                      <Braces className="h-4 w-4" />
+                    </a>
+                  ) : null}
                 </div>
               </div>
 
