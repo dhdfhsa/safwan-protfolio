@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../componets/Button'
+import Reveal from '../componets/Reveal'
 import { ArrowRight, Atom, Cpu, Database, Download, Server, Wind } from 'lucide-react'
 
 const skills = [
@@ -35,22 +36,22 @@ const Hero = () => {
 
       <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-14 px-6 pb-40 pt-32 sm:pt-36 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
         <div className="max-w-2xl">
-          <div className="animate-hero-rise mb-5 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-xs font-medium tracking-[0.25em] text-primary/90" style={{ animationDelay: '80ms' }}>
+          <Reveal className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-xs font-medium tracking-[0.25em] text-primary/90" delay={80}>
             <span className="h-2 w-2 rounded-full bg-primary shadow-[0_0_12px_rgba(32,178,166,0.8)]" />
             Full Stack Developer-MERN Specialist
-          </div>
+          </Reveal>
 
-          <h1 className="animate-hero-rise max-w-xl text-5xl font-semibold leading-[0.95] text-white sm:text-6xl lg:text-7xl" style={{ animationDelay: '160ms' }}>
+          <Reveal as="h1" className="max-w-xl text-5xl font-semibold leading-[0.95] text-white sm:text-6xl lg:text-7xl" delay={160}>
             Making <span className="text-primary">Web</span> that you never {' '}
             <span className="font-serif italic font-normal text-white/95">seen.</span>
-          </h1>
+          </Reveal>
 
-          <p className="animate-hero-rise mt-6 max-w-xl text-base leading-8 text-white/55 sm:text-lg" style={{ animationDelay: '240ms' }}>
+          <Reveal as="p" className="mt-6 max-w-xl text-base leading-8 text-white/55 sm:text-lg" delay={240}>
             Hi, I&apos;m Md. Safwan, a software engineer specializing in React,Node.js,Express.js Next.js,
             and Tailwind. I build scalable, performant web applications that users love.Specially I build <span className='text-primary '> <b> Restaurants and EdTeach Websites</b></span>
-          </p>
+          </Reveal>
 
-          <div className="animate-hero-rise mt-9 flex flex-wrap items-center gap-4" style={{ animationDelay: '320ms' }}>
+          <Reveal className="mt-9 flex flex-wrap items-center gap-4" delay={320}>
             <Button
               size="sm"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
@@ -66,9 +67,9 @@ const Hero = () => {
               <Download className="h-4 w-4" />
               Download CV
             </a>
-          </div>
+          </Reveal>
 
-          <div className="animate-hero-rise mt-10 flex items-center gap-4 text-sm text-white/40" style={{ animationDelay: '400ms' }}>
+          <Reveal className="mt-10 flex items-center gap-4 text-sm text-white/40" delay={400}>
             <span className="mr-1">Follow me</span>
             <a
               href="https://github.com/dhdfhsa" target='_blank'
@@ -107,10 +108,10 @@ const Hero = () => {
                 <path d="M18.9 3H22l-6.8 7.7L23 21h-7l-5.4-6.9L4.6 21H1.5l7.3-8.3L1 3h7.1l5 6.3L18.9 3Zm-1.2 16.2h1.7L7.2 4.8H5.3L17.7 19.2Z" />
               </svg>
             </a>
-          </div>
+          </Reveal>
         </div>
 
-        <div className="relative z-30 mx-auto w-full max-w-2xl animate-hero-rise" style={{ animationDelay: '220ms' }}>
+        <Reveal className="relative z-30 mx-auto w-full max-w-2xl" delay={220}>
           <div className="absolute -left-2 top-4 z-60 rounded-2xl border border-white/10 bg-[#0f1418]/80 px-4 py-3 backdrop-blur">
             <div className="text-lg font-semibold text-primary">1+</div>
             <div className="text-xs uppercase tracking-[0.28em] text-white/55">Years Exp</div>
@@ -156,10 +157,10 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 z-20 animate-fade-in animation-delay-600">
+      <Reveal className="absolute bottom-0 left-0 right-0 z-20" delay={600}>
         <div className="relative pb-14">
           <p className="pt-3 text-center text-[0.62rem] font-medium uppercase tracking-[0.42em] text-white/35">
             Technologies I work with
@@ -183,7 +184,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Reveal>
     </section>
   )
 }

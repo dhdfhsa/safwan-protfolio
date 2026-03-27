@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { ArrowUpRight, Braces, ExternalLink, Layers3, Sparkles, Zap } from 'lucide-react'
+import Reveal from '../componets/Reveal'
 
 const projectTabs = ['All', 'Web Apps', 'UI Components', 'Full Stack']
 
@@ -51,19 +52,19 @@ const Projects = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(32,178,166,0.08),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(32,178,166,0.05),transparent_28%)]" />
       <div className="relative mx-auto max-w-7xl px-6 py-24 lg:py-28">
         <div className="mx-auto mb-12 max-w-4xl text-center">
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-xs font-medium tracking-[0.22em] text-primary/90">
+          <Reveal className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-xs font-medium tracking-[0.22em] text-primary/90" delay={80}>
             <Sparkles className="h-3.5 w-3.5" />
             My Projects
-          </div>
-          <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+          </Reveal>
+          <Reveal as="h2" className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl" delay={140}>
             Projects & Case Studies
-          </h2>
-          <p className="mt-4 text-sm text-white/42 sm:text-base">
+          </Reveal>
+          <Reveal as="p" className="mt-4 text-sm text-white/42 sm:text-base" delay={220}>
             A selection of featured builds, product experiments, and component work.
-          </p>
+          </Reveal>
         </div>
 
-        <div className="mb-10 flex flex-wrap justify-center gap-3">
+        <Reveal className="mb-10 flex flex-wrap justify-center gap-3" delay={280}>
           {projectTabs.map((tab) => (
             <button
               key={tab}
@@ -78,13 +79,15 @@ const Projects = () => {
               {tab}
             </button>
           ))}
-        </div>
+        </Reveal>
 
         <div className="grid gap-6 lg:grid-cols-3">
-          {filteredProjects.map((project) => (
-            <article
+          {filteredProjects.map((project, index) => (
+            <Reveal
               key={project.title}
               className="group overflow-hidden rounded-[1.7rem] border border-white/8 bg-white/5 shadow-[0_20px_50px_rgba(0,0,0,0.24)] transition duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-[0_26px_60px_rgba(0,0,0,0.34)]"
+              delay={120 + index * 100}
+              direction="up"
             >
               <div className="relative overflow-hidden border-b border-white/8 bg-[#0a0d14]">
                 <img
@@ -152,17 +155,17 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-            </article>
+            </Reveal>
           ))}
         </div>
 
         {filteredProjects.length === 0 ? (
-          <div className="mt-10 text-center text-sm text-white/45">
+          <Reveal className="mt-10 text-center text-sm text-white/45" delay={80}>
             No projects found in this category yet.
-          </div>
+          </Reveal>
         ) : null}
 
-        <div className="mt-10 flex items-center justify-center">
+        <Reveal className="mt-10 flex items-center justify-center" delay={180}>
           <button
             type="button"
             className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm font-medium text-white/70 transition duration-300 hover:-translate-y-0.5 hover:border-primary/20 hover:text-primary"
@@ -170,7 +173,7 @@ const Projects = () => {
             <Zap className="h-4 w-4" />
             View More Projects
           </button>
-        </div>
+        </Reveal>
       </div>
     </section>
   )

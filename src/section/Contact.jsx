@@ -1,5 +1,6 @@
 import React from 'react'
 import { Mail, MapPin, Phone, SendHorizontal, Sparkles } from 'lucide-react'
+import Reveal from '../componets/Reveal'
 
 const contactItems = [
   { label: 'Email', value: 'safwanwr111@gmail.com', Icon: Mail },
@@ -13,20 +14,20 @@ const Contact = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(32,178,166,0.08),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(32,178,166,0.05),transparent_28%)]" />
       <div className="relative mx-auto max-w-7xl px-6 py-24 lg:py-28">
         <div className="mx-auto max-w-4xl text-center">
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-xs font-medium tracking-[0.22em] text-primary/90">
+          <Reveal className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-xs font-medium tracking-[0.22em] text-primary/90" delay={80}>
             <Sparkles className="h-3.5 w-3.5" />
             Get In Touch
-          </div>
-          <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+          </Reveal>
+          <Reveal as="h2" className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl" delay={140}>
             Let&apos;s build <span className="font-serif italic font-normal text-white/95">something great.</span>
-          </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-white/42 sm:text-base">
+          </Reveal>
+          <Reveal as="p" className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-white/42 sm:text-base" delay={220}>
             Have a project in mind? I&apos;d love to hear about it. Send me a message and let&apos;s discuss how we can work together.
-          </p>
+          </Reveal>
         </div>
 
         <div className="mt-16 grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
-          <form className="rounded-[1.8rem] border border-white/8 bg-white/5 p-6 shadow-[0_20px_50px_rgba(0,0,0,0.24)]">
+          <Reveal as="form" className="rounded-[1.8rem] border border-white/8 bg-white/5 p-6 shadow-[0_20px_50px_rgba(0,0,0,0.24)]" delay={120}>
             <div className="space-y-5">
               <div>
                 <label className="mb-2 block text-sm font-medium text-white/70">Name</label>
@@ -63,10 +64,10 @@ const Contact = () => {
                 <SendHorizontal className="h-4 w-4" />
               </button>
             </div>
-          </form>
+          </Reveal>
 
           <div className="space-y-6">
-            <div className="rounded-[1.8rem] border border-white/8 bg-white/5 p-6 shadow-[0_20px_50px_rgba(0,0,0,0.24)]">
+            <Reveal className="rounded-[1.8rem] border border-white/8 bg-white/5 p-6 shadow-[0_20px_50px_rgba(0,0,0,0.24)]" delay={200}>
               <h3 className="text-xl font-semibold text-white">Contact Information</h3>
 
               <div className="mt-6 space-y-5">
@@ -82,9 +83,9 @@ const Contact = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </Reveal>
 
-            <div className="rounded-[1.8rem] border border-white/8 bg-white/5 p-6 shadow-[0_20px_50px_rgba(0,0,0,0.24)]">
+            <Reveal className="rounded-[1.8rem] border border-white/8 bg-white/5 p-6 shadow-[0_20px_50px_rgba(0,0,0,0.24)]" delay={280}>
               <div className="flex items-center gap-2 text-sm font-medium text-primary">
                 <span className="h-2.5 w-2.5 rounded-full bg-primary shadow-[0_0_10px_rgba(32,178,166,0.8)]" />
                 Currently Available
@@ -92,7 +93,7 @@ const Contact = () => {
               <p className="mt-4 max-w-xl text-sm leading-7 text-white/45">
                 I&apos;m currently open to new opportunities and exciting projects. Whether you need a full-time engineer or a freelance consultant, let&apos;s talk.
               </p>
-            </div>
+            </Reveal>
           </div>
         </div>
       </div>

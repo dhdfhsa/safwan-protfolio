@@ -1,5 +1,6 @@
 import React from 'react'
 import { Braces, Code2, Database, Layers3, MonitorSmartphone, Rocket, Server, Settings2, Sparkles } from 'lucide-react'
+import Reveal from '../componets/Reveal'
 
 const skillGroups = [
   {
@@ -45,25 +46,26 @@ const Skiils = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(32,178,166,0.08),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(32,178,166,0.06),transparent_30%)]" />
       <div className="relative mx-auto max-w-7xl px-6 py-24 lg:py-28">
         <div className="mx-auto mb-14 max-w-3xl text-center">
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-xs font-medium tracking-[0.22em] text-primary/90">
+          <Reveal className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-xs font-medium tracking-[0.22em] text-primary/90" delay={80}>
             <Sparkles className="h-3.5 w-3.5" />
             My Expertise
-          </div>
-          <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+          </Reveal>
+          <Reveal as="h2" className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl" delay={140}>
             Skills & Technologies
-          </h2>
-          <p className="mt-4 text-sm text-white/42 sm:text-base">
+          </Reveal>
+          <Reveal as="p" className="mt-4 text-sm text-white/42 sm:text-base" delay={220}>
             A comprehensive overview of my technical skills and proficiency levels
-          </p>
+          </Reveal>
         </div>
 
         <div className="grid gap-6 lg:grid-cols-3">
           {skillGroups.map((group, groupIndex) => (
-            <div
+            <Reveal
               key={group.title}
               className={`rounded-[1.6rem] border border-white/8 bg-white/5 p-6 shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-[0_26px_60px_rgba(0,0,0,0.28)] ${
                 groupIndex === 1 ? 'lg:mt-0' : ''
               }`}
+              delay={120 + groupIndex * 120}
             >
               <div className="mb-5 flex items-center gap-3">
                 <span className="h-8 w-1 rounded-full bg-primary/70" />
@@ -102,9 +104,9 @@ const Skiils = () => {
                       />
                     </div>
                   </div>
-                ))}
+                  ))}
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

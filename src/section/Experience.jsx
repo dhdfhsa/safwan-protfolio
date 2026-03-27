@@ -1,5 +1,6 @@
 import React from 'react'
 import { BriefcaseBusiness, Code2, Layers3, Sparkles, Zap } from 'lucide-react'
+import Reveal from '../componets/Reveal'
 
 const timeline = [
   {
@@ -35,16 +36,16 @@ const Experience = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(32,178,166,0.08),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(32,178,166,0.05),transparent_28%)]" />
       <div className="relative mx-auto max-w-7xl px-6 py-24 lg:py-28">
         <div className="mb-16 max-w-4xl">
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-xs font-medium tracking-[0.22em] text-primary/90">
+          <Reveal className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-xs font-medium tracking-[0.22em] text-primary/90" delay={80}>
             <Sparkles className="h-3.5 w-3.5" />
             Career Journey
-          </div>
-          <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+          </Reveal>
+          <Reveal as="h2" className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl" delay={140}>
             Experience that <span className="font-serif italic font-normal text-white/95">speaks volumes.</span>
-          </h2>
-          <p className="mt-4 max-w-2xl text-sm leading-7 text-white/42 sm:text-base">
+          </Reveal>
+          <Reveal as="p" className="mt-4 max-w-2xl text-sm leading-7 text-white/42 sm:text-base" delay={220}>
             A timeline of my professional growth, from curious beginner to building products and leading teams.
-          </p>
+          </Reveal>
         </div>
 
         <div className="relative">
@@ -52,11 +53,13 @@ const Experience = () => {
 
           <div className="space-y-10 lg:space-y-14">
             {timeline.map((item, index) => (
-              <div
+              <Reveal
                 key={`${item.year}-${item.title}`}
                 className={`relative grid gap-6 lg:grid-cols-2 lg:items-center ${
                   item.side === 'right' ? 'lg:translate-y-10' : ''
                 }`}
+                delay={120 + index * 120}
+                direction={item.side === 'right' ? 'left' : 'right'}
               >
                 <div className={`${item.side === 'right' ? 'lg:col-start-2' : ''} lg:pr-10`}>
                   <article className="group rounded-[1.6rem] border border-white/8 bg-white/5 p-6 shadow-[0_20px_50px_rgba(0,0,0,0.24)] transition duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-[0_26px_60px_rgba(0,0,0,0.34)]">
@@ -98,7 +101,7 @@ const Experience = () => {
                 </div>
 
                 <div className={`${item.side === 'left' ? 'lg:col-start-2' : 'lg:col-start-1'} hidden lg:block`} />
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
