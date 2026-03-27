@@ -21,9 +21,9 @@ const projects = [
     category: 'Full Stack',
     description:
       'Full-stack shopping experience with product management, cart flow, and secure checkout interactions.',
-    image: '/Gemini_Generated_Image_cg0t36cg0t36cg0t.png',
-    demoUrl: 'https://frontened-tomato.vercel.app/',
-    sourceUrl: 'https://github.com/dhdfhsa/frontened-tomato',
+    image: 'public/Gemini_Generated_Image_lklnt5lklnt5lkln.png',
+    demoUrl: '',
+    sourceUrl: '',
     tags: ['React', 'Node.js', "Express.js",'MongoDB', 'Stripe',"Tailwind",],
     stat: '40% increase in conversion',
   },
@@ -34,8 +34,8 @@ const projects = [
     description:
       'Reusable React component library with accessible patterns, documentation, and modern styling.',
     image: '/Gemini_Generated_Image_ux0wo4ux0wo4ux0w.png',
-    demoUrl: 'https://frontened-tomato.vercel.app/',
-    sourceUrl: 'https://github.com/dhdfhsa/frontened-tomato',
+    demoUrl: 'https://saajssd.github.io/nhfound2/index.html',
+    sourceUrl: '',
     tags: ["HTML","CSS","JavaScript"],
     stat: '50+ components shipped',
   },
