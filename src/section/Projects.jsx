@@ -10,7 +10,9 @@ const projects = [
     description:
       ' Tomato, a full-stack food delivery application I built using the MERN stack! 🍅This project features a dynamic React frontend, a robust Node/Express backend, and seamless MongoDB integration for real-time menu management.',
 
-    image: 'public/Gemini_Generated_Image_kb5xp5kb5xp5kb5x.png',
+    image: '/Gemini_Generated_Image_kb5xp5kb5xp5kb5x.png',
+    demoUrl: 'https://frontened-tomato.vercel.app/',
+    sourceUrl: 'https://github.com/dhdfhsa/frontened-tomato',
     tags: ['React', 'Node.js', "Express.js",'MongoDB', 'Stripe'],
     stat: '500+ active users',
   },
@@ -19,7 +21,9 @@ const projects = [
     category: 'Full Stack',
     description:
       'Full-stack shopping experience with product management, cart flow, and secure checkout interactions.',
-    image: 'public/Gemini_Generated_Image_cg0t36cg0t36cg0t.png',
+    image: '/Gemini_Generated_Image_cg0t36cg0t36cg0t.png',
+    demoUrl: 'https://frontened-tomato.vercel.app/',
+    sourceUrl: 'https://github.com/dhdfhsa/frontened-tomato',
     tags: ['React', 'Node.js', "Express.js",'MongoDB', 'Stripe',"Tailwind",],
     stat: '40% increase in conversion',
   },
@@ -29,7 +33,9 @@ const projects = [
     category: 'UI Components',
     description:
       'Reusable React component library with accessible patterns, documentation, and modern styling.',
-    image: 'public/Gemini_Generated_Image_ux0wo4ux0wo4ux0w.png',
+    image: '/Gemini_Generated_Image_ux0wo4ux0wo4ux0w.png',
+    demoUrl: 'https://frontened-tomato.vercel.app/',
+    sourceUrl: 'https://github.com/dhdfhsa/frontened-tomato',
     tags: ["HTML","CSS","JavaScript"],
     stat: '50+ components shipped',
   },
@@ -94,18 +100,22 @@ const Projects = () => {
 
                 <div className="absolute right-4 bottom-4 flex gap-2">
                   <a
-                    href="#projects"
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noreferrer noopener"
                     aria-label={`${project.title} demo`}
                     className="grid h-10 w-10 place-items-center rounded-xl border border-white/10 bg-black/45 text-white/80 backdrop-blur-sm transition duration-300 hover:border-primary/30 hover:text-primary"
                   >
-                   <ExternalLink href='https://frontened-tomato.vercel.app/' className="h-4 w-4" /> 
+                   <ExternalLink className="h-4 w-4" /> 
                   </a>
                   <a
-                    href="https://github.com/dhdfhsa/frontened-tomato" target="_blank"
+                    href={project.sourceUrl}
+                    target="_blank"
+                    rel="noreferrer noopener"
                     aria-label={`${project.title} source code`}
                     className="grid h-10 w-10 place-items-center rounded-xl border border-white/10 bg-black/45 text-white/80 backdrop-blur-sm transition duration-300 hover:border-primary/30 hover:text-primary"
                   >
-                    <Braces href='https://frontened-tomato.vercel.app/' className="h-4 w-4" />
+                    <Braces className="h-4 w-4" />
                   </a>
                 </div>
               </div>
