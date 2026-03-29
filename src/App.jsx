@@ -5,6 +5,7 @@ import Skiils from './section/Skiils'
 import Projects from './section/Projects'
 import About from './section/About';
 import Experience from './section/Experience';
+import Price from './section/Price';
 import Testimonial from './section/Testimonial';
 import Contact from './section/Contact';
 
@@ -18,6 +19,7 @@ const App = () => {
         <Skiils/>
         <Projects/>
         <Experience/>
+        <Price/>
         <Testimonial/>
         <Contact/>
       </main>

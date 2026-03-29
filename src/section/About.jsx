@@ -87,8 +87,10 @@ const About = () => {
           </div>
 
           <Reveal className="relative mt-10 lg:mt-40" delay={180}>
-            <div className="absolute -right-10 bottom-[-70px] h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
-            <div className="grid gap-4">
+            <div className="pointer-events-none absolute -right-56 -bottom-72 h-[820px] w-[820px] rounded-full bg-[radial-gradient(circle_at_42%_42%,rgba(32,178,166,0.28)_0%,rgba(32,178,166,0.18)_18%,rgba(32,178,166,0.1)_34%,rgba(32,178,166,0.05)_52%,rgba(32,178,166,0.02)_68%,transparent_80%)] blur-[0.5px] lg:-right-80 lg:-bottom-88" />
+            <div className="pointer-events-none absolute -right-56 -bottom-72 h-[820px] w-[820px] rounded-full bg-[radial-gradient(circle_at_58%_38%,rgba(32,178,166,0.1)_0%,transparent_34%)] lg:-right-80 lg:-bottom-88" />
+
+            <div className="relative z-10 grid gap-4">
               <Reveal
                 className="rounded-[1.5rem] border border-white/8 bg-white/5 p-5 shadow-[0_20px_50px_rgba(0,0,0,0.22)] transition duration-300 hover:-translate-y-1 hover:border-primary/25 hover:bg-white/7 hover:shadow-[0_24px_60px_rgba(0,0,0,0.3)]"
                 delay={80}

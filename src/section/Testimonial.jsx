@@ -44,6 +44,8 @@ const Testimonial = () => {
   return (
     <section id="testimonial" className="relative overflow-hidden bg-[#020512] text-white">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(32,178,166,0.08),transparent_34%),radial-gradient(circle_at_bottom,rgba(32,178,166,0.05),transparent_28%)]" />
+      <div className="pointer-events-none absolute left-1/2 top-[56%] h-[760px] w-[760px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(32,178,166,0.24)_0%,rgba(32,178,166,0.14)_16%,rgba(32,178,166,0.08)_30%,rgba(32,178,166,0.04)_46%,transparent_72%)] blur-[1px]" />
+      <div className="pointer-events-none absolute left-1/2 top-[56%] h-[760px] w-[760px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(32,178,166,0.06)_0%,transparent_34%)]" />
       <div className="relative mx-auto max-w-7xl px-6 py-24 lg:py-28">
         <div className="mx-auto max-w-4xl text-center">
           <Reveal className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-xs font-medium tracking-[0.22em] text-primary/90" delay={80}>

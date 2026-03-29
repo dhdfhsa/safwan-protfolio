@@ -114,7 +114,7 @@ const Hero = () => {
 
         <Reveal className="relative z-30 mx-auto w-full max-w-2xl" delay={220}>
           <div className="absolute -left-2 top-4 z-60 rounded-2xl border border-white/10 bg-[#0f1418]/80 px-4 py-3 backdrop-blur">
-            <div className="text-lg font-semibold text-primary">1+</div>
+            <div className="text-lg font-semibold text-primary">3+</div>
             <div className="text-xs uppercase tracking-[0.28em] text-white/55">Years Exp</div>
           </div>
 
