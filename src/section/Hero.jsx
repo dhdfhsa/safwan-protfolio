@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../componets/Button'
+import FloatingIcons from '../layout/FloatingIcons'
 import Reveal from '../componets/Reveal'
 import { ArrowRight, Atom, Cpu, Database, Download, Server, Wind } from 'lucide-react'
 
@@ -28,11 +29,8 @@ const techIcons = [
 const Hero = () => {
   return (
     <section id="home" className='relative min-h-screen flex items-center overflow-hidden bg-[#020512] text-white'>
-      <div className='absolute inset-0'>
-        <img src='/hero-bg.jpg' alt='Hero background' className='w-full h-full object-cover opacity-40' />
-      </div>
-      <div className='absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(58,13,128,.45),_rgba(10,12,23,0.65)_60%,_rgba(5,6,10,.9)_100%)] animate-bg-flow' />
-      <div className='absolute inset-0 bg-[linear-gradient(135deg,rgba(17,24,39,0.5),rgba(5,8,18,0.9))]' />
+      <div className="absolute inset-0 bg-[#020512]" />
+      <FloatingIcons className="absolute inset-0 z-0" />
 
       <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-14 px-6 pb-40 pt-32 sm:pt-36 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
         <div className="max-w-2xl">

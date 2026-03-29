@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from './layout/Navbar'
-import FloatingIcons from './layout/FloatingIcons'
 import Hero from './section/Hero'
 import Skiils from './section/Skiils'
 import Projects from './section/Projects'
@@ -12,7 +11,6 @@ import Contact from './section/Contact';
 const App = () => {
   return (
     <div className='min-h-screen overscroll-x-hidden'>
-      <FloatingIcons />
       <Navbar/>
       <main>
         <Hero/>

@@ -49,7 +49,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="relative overflow-hidden bg-[#020512] text-white">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(32,178,166,0.08),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(32,178,166,0.05),transparent_28%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(32,178,166,0.1),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(32,178,166,0.06),transparent_28%)]" />
       <div className="relative mx-auto max-w-7xl px-6 py-24 lg:py-28">
         <div className="mx-auto mb-12 max-w-4xl text-center">
           <Reveal className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-xs font-medium tracking-[0.22em] text-primary/90" delay={80}>
@@ -59,7 +59,7 @@ const Projects = () => {
           <Reveal as="h2" className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl" delay={140}>
             Projects & Case Studies
           </Reveal>
-          <Reveal as="p" className="mt-4 text-sm text-white/42 sm:text-base" delay={220}>
+          <Reveal as="p" className="mt-4 text-sm text-white/45 sm:text-base" delay={220}>
             A selection of featured builds, product experiments, and component work.
           </Reveal>
         </div>
@@ -72,8 +72,8 @@ const Projects = () => {
               onClick={() => setActiveTab(tab)}
               className={`rounded-full border px-4 py-2 text-sm font-medium transition duration-300 ${
                 activeTab === tab
-                  ? 'border-primary/25 bg-primary/15 text-primary shadow-[0_0_24px_rgba(32,178,166,0.12)]'
-                  : 'border-white/10 bg-white/5 text-white/60 hover:border-primary/20 hover:text-white'
+                  ? 'border-primary/30 bg-primary/15 text-primary shadow-[0_0_24px_rgba(32,178,166,0.14)]'
+                  : 'border-white/10 bg-[#0b1118]/60 text-white/60 hover:border-primary/20 hover:text-white hover:bg-white/8'
               }`}
             >
               {tab}
@@ -85,7 +85,7 @@ const Projects = () => {
           {filteredProjects.map((project, index) => (
             <Reveal
               key={project.title}
-              className="group overflow-hidden rounded-[1.7rem] border border-white/8 bg-white/5 shadow-[0_20px_50px_rgba(0,0,0,0.24)] transition duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-[0_26px_60px_rgba(0,0,0,0.34)]"
+              className="group overflow-hidden rounded-[1.85rem] border border-white/10 bg-[#0b1118]/80 shadow-[0_20px_50px_rgba(0,0,0,0.24)] transition duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-[0_26px_60px_rgba(0,0,0,0.34)]"
               delay={120 + index * 100}
               direction="up"
             >
@@ -131,7 +131,7 @@ const Projects = () => {
                 <h3 className="text-2xl font-semibold tracking-tight text-white transition duration-300 group-hover:text-primary">
                   {project.title}
                 </h3>
-                <p className="mt-3 text-sm leading-7 text-white/48">{project.description}</p>
+                <p className="mt-3 text-sm leading-7 text-white/50">{project.description}</p>
 
                 <div className="mt-5 flex flex-wrap gap-2">
                   {project.tags.map((tag) => (

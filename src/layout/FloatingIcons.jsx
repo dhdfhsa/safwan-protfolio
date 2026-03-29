@@ -89,9 +89,9 @@ const dots = [
   { id: 'dot-62', left: '90%', top: '58%', size: 6, duration: '20s', delay: '-1s', opacity: 0.37 },
 ]
 
-const FloatingIcons = () => {
+const FloatingIcons = ({ className = 'fixed inset-0 z-20' }) => {
   return (
-    <div className="pointer-events-none fixed inset-0 z-20 overflow-hidden">
+    <div className={`pointer-events-none overflow-hidden ${className}`}>
       {dots.map((dot) => (
         <span
           key={dot.id}
