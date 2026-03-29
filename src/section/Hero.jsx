@@ -41,14 +41,17 @@ const Hero = () => {
             Full Stack Developer-MERN Specialist
           </Reveal>
 
-          <Reveal as="h1" className="max-w-xl text-5xl font-semibold leading-[0.95] text-white sm:text-6xl lg:text-7xl" delay={160}>
-            Making <span className="text-primary">Web</span> that you never {' '}
-            <span className="font-serif italic font-normal text-white/95">seen.</span>
+          <Reveal as="h1" className="max-w-xl text-3xl font-semibold leading-[1.08] text-white sm:text-4xl lg:text-5xl" delay={160}>
+            <span className="block text-[0.82em] font-medium text-white/74">
+              Turning Complex Ideas into
+            </span>
+            <span className="mt-2 block text-[1.06em] leading-[0.95] text-[#2dd4bf] sm:text-[1.14em] lg:text-[1.2em]">
+              Scalable Web Applications.
+            </span>
           </Reveal>
 
           <Reveal as="p" className="mt-6 max-w-xl text-base leading-8 text-white/55 sm:text-lg" delay={240}>
-            Hi, I&apos;m Md. Safwan, a software engineer specializing in React,Node.js,Express.js Next.js,
-            and Tailwind. I build scalable, performant web applications that users love.Specially I build <span className='text-primary '> <b> Restaurants and EdTeach Websites</b></span>
+             MERN Specialist dedicated to building high-performance <span className='text-primary '> <b> E-commerce, Restaurant, and EdTech websites.</b></span> I help businesses automate their workflows and sell more online.
           </Reveal>
 
           <Reveal className="mt-9 flex flex-wrap items-center gap-4" delay={320}>
