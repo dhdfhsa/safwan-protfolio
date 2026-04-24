@@ -9,7 +9,7 @@ const timeline = [
     company: 'MSMS IT Ltd.',
     description:
       'Leading frontend architecture for a suite of fintech products, improving scalability, performance, and team delivery.',
-    tags: ['React', 'Node.js', "Express.js","MongoDB",'Next.js',"Tailwind"],
+    tags: ['TypeScript','Next.js','React', 'Node.js', "Express.js","MongoDB",'Next.js',"Tailwind"],
     side: 'left',
   },
   {

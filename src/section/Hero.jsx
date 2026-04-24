@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../componets/Button'
-import FloatingIcons from '../layout/FloatingIcons'
 import Reveal from '../componets/Reveal'
+import FloatingIcons from '../layout/FloatingIcons'
 import { ArrowRight, Atom, Cpu, Database, Download, Server, Wind } from 'lucide-react'
 
 const skills = [

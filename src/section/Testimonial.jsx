@@ -4,29 +4,29 @@ import Reveal from '../componets/Reveal'
 
 const testimonials = [
   {
-    image: '/profile-photo-custom.jpg',
+    image: '/627248027_122197663724346093_8370528223065842788.jpg',
     quote:
-      'Outstanding work on our React application. The solution was fast, scalable, and delivered with exceptional attention to detail and code quality.',
+      'If you’re looking for a developer who understands the balance between speed and scalability, Mohammad Safwan is your person. Their expertise in the MERN stack shows in every project—resulting in websites that are not only visually qualitiful and smooth but also incredibly stable under pressure. A truly reliable developer who takes pride in clean, maintainable code',
     name: 'Sarah Mitchell',
     role: 'CTO, TechStart Inc.',
-    metric: '3x Faster Delivery',
+    metric: 'speed and scalability',
   },
-  {
-    image: '/profile-photo.jpg',
-    quote:
-      'A thoughtful engineer who turns complex requirements into polished interfaces. Communication was clear, and the final product exceeded expectations.',
-    name: 'Daniel Carter',
-    role: 'Product Lead, Northstar',
-    metric: '98% Satisfaction',
-  },
-  {
-    image: '/hero-portrait-new.png',
-    quote:
-      'Reliable, detail-oriented, and very strong on frontend architecture. The project felt easy from kickoff to launch.',
-    name: 'Maya Thompson',
-    role: 'Founder, Studio Bloom',
-    metric: '5-Star Delivery',
-  },
+  // {
+  //   image: '/profile-photo.jpg',
+  //   quote:
+  //     'A thoughtful engineer who turns complex requirements into polished interfaces. Communication was clear, and the final product exceeded expectations.',
+  //   name: 'Daniel Carter',
+  //   role: 'Product Lead, Northstar',
+  //   metric: '98% Satisfaction',
+  // },
+  // {
+  //   image: '/hero-portrait-new.png',
+  //   quote:
+  //     'Reliable, detail-oriented, and very strong on frontend architecture. The project felt easy from kickoff to launch.',
+  //   name: 'Maya Thompson',
+  //   role: 'Founder, Studio Bloom',
+  //   metric: '5-Star Delivery',
+  // },
 ]
 
 const Testimonial = () => {
