@@ -1,0 +1,18 @@
+{
+  "name": "Safwan Portfolio",
+  "short_name": "Safwan",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#020512",
+  "theme_color": "#020512",
+  "description": "Md. Safwan builds fast, conversion-focused MERN stack websites and web apps for e-commerce, restaurants, and EdTech brands.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

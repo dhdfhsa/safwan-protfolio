@@ -14,7 +14,8 @@ const skills = [
   "Tailwind",
   "HTML",
   "CSS",
-  "JavaScript"
+  "JavaScript",
+  "TypeScript",
 ]
 
 const techIcons = [

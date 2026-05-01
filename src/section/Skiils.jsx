@@ -10,6 +10,7 @@ const skillGroups = [
       { name: 'React.js', years: '1+ years', level: 'Expert', percent: 92, Icon: Code2 },
       { name: 'JavaScript', years: '3+ years', level: 'Expert', percent: 96, Icon: Braces },
       { name: 'Next.js', years: '0.5+ years', level: 'Expert', percent: 90, Icon: Layers3 },
+      { name: 'TypeScript', years: '0.5+ years', level: 'Indermidiat', percent: 70, Icon: Layers3 },
       { name: 'Tailwind CSS', years: '2+ years', level: 'Expert', percent: 91, Icon: MonitorSmartphone },
     ],
   },

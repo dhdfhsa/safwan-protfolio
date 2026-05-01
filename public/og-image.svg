@@ -1,0 +1,32 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Md. Safwan portfolio preview</title>
+  <desc id="desc">A dark teal portfolio card highlighting MERN stack and Next.js development.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#020512" />
+      <stop offset="1" stop-color="#08131A" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(910 146) rotate(135) scale(460 300)">
+      <stop stop-color="#20B2A6" stop-opacity="0.35" />
+      <stop offset="1" stop-color="#20B2A6" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="line" x1="120" y1="476" x2="1080" y2="476" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#20B2A6" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#20B2A6" stop-opacity="0.65" />
+      <stop offset="1" stop-color="#20B2A6" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#glow)" />
+  <circle cx="980" cy="122" r="154" fill="#20B2A6" fill-opacity="0.10" />
+  <circle cx="1030" cy="158" r="252" fill="#20B2A6" fill-opacity="0.06" />
+  <circle cx="180" cy="140" r="116" fill="#FFFFFF" fill-opacity="0.03" />
+  <rect x="96" y="86" width="1008" height="458" rx="34" stroke="#20B2A6" stroke-opacity="0.18" />
+  <rect x="96" y="86" width="1008" height="458" rx="34" fill="white" fill-opacity="0.02" />
+  <text x="126" y="174" fill="#20B2A6" font-family="Inter, Arial, sans-serif" font-size="28" letter-spacing="6">PORTFOLIO</text>
+  <text x="126" y="278" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="74" font-weight="700">Md. Safwan</text>
+  <text x="126" y="340" fill="#D9F8F4" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="500">MERN Stack Developer &amp; Next.js Freelancer</text>
+  <text x="126" y="406" fill="#A8B3C0" font-family="Inter, Arial, sans-serif" font-size="28">Fast, conversion-focused websites for e-commerce, restaurants, and EdTech brands.</text>
+  <line x1="126" y1="476" x2="1074" y2="476" stroke="url(#line)" stroke-width="2" />
+  <text x="126" y="526" fill="#FFFFFF" fill-opacity="0.75" font-family="Inter, Arial, sans-serif" font-size="22" letter-spacing="2">REACT  ·  NODE  ·  EXPRESS  ·  MONGODB  ·  NEXT.JS</text>
+</svg>

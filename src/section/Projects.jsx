@@ -17,29 +17,41 @@ const projects = [
     tags: ['React', 'Node.js', "Express.js",'MongoDB', 'Stripe'],
     stat: '500+ active users',
   },
+     {
+    title: 'Al Falah Foundation',
+    category: 'Full Stack',
+    description:
+      'Al Falah foundation, a charity organization website built using the MERN stack! 🌟 This project features a dynamic Next js and TypeScript frontend, a robust Node/Express backend, and seamless MongoDB integration for real-time content management.',
+
+    image: '/Gemini_Generated_Image_kgm37qkgm37qkgm3.png',
+    demoUrl:'https://al-falah-foundation12.vercel.app/',
+    sourceUrl: 'https://github.com/dhdfhsa/al-falah-foundation12',
+    tags: ['Next.js','TypeScript', 'Node.js', "Express.js",'MongoDB', 'Stripe'],
+    stat: '500+ active users',
+  },
   {
     title: 'E-Commerce Platform',
     category: 'Full Stack',
     description:
       'Full-stack shopping experience with product management, cart flow, and secure checkout interactions.',
     image: '/Gemini_Generated_Image_lklnt5lklnt5lkln.png',
-    demoUrl: '',
+    demoUrl: 'https://foreverbuy.in/',
     sourceUrl: '',
     tags: ['React', 'Node.js', "Express.js",'MongoDB', 'Stripe',"Tailwind",],
     stat: '40% increase in conversion',
   },
  
-  {
-    title: 'Component Library',
-    category: 'UI Components',
-    description:
-      'Reusable React component library with accessible patterns, documentation, and modern styling.',
-    image: '/Gemini_Generated_Image_ux0wo4ux0wo4ux0w.png',
-    demoUrl: 'https://saajssd.github.io/nhfound2/index.html',
-    sourceUrl: '',
-    tags: ["HTML","CSS","JavaScript"],
-    stat: '50+ components shipped',
-  },
+  // {
+  //   title: 'Component Library',
+  //   category: 'UI Components',
+  //   description:
+  //     'Reusable React component library with accessible patterns, documentation, and modern styling.',
+  //   image: '/Gemini_Generated_Image_ux0wo4ux0wo4ux0w.png',
+  //   demoUrl: 'https://saajssd.github.io/nhfound2/index.html',
+  //   sourceUrl: '',
+  //   tags: ["HTML","CSS","JavaScript"],
+  //   stat: '50+ components shipped',
+  // },
 ]
 
 const Projects = () => {
