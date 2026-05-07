@@ -8,18 +8,21 @@ import Experience from './section/Experience';
 import Price from './section/Price';
 import Testimonial from './section/Testimonial';
 import Contact from './section/Contact';
-
+import CustomCursor from './layout/CustomCursor'
+// import AIChatbot from './layout/AIChatbot'
 const App = () => {
   return (
     <div className='min-h-screen overscroll-x-hidden'>
       <Navbar/>
+      <CustomCursor />   {/* ← glowing cursor */}
+      {/* <AIChatbot />   */}
       <main>
         <Hero/>
         <About/>
         <Skiils/>
         <Projects/>
         <Experience/>
-        <Price/>
+        {/* <Price/> */}
         <Testimonial/>
         <Contact/>
       </main>
